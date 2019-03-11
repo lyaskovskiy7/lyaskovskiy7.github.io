@@ -1,0 +1,151 @@
+.background-header {
+    width: 100%;
+    height: 1100px;
+    background: url('../src/img/header.png') no-repeat center top;
+    background-size: cover;
+    position: relative;
+}
+
+.wrapper {
+    @include wrapper;
+    border: 1px solid;
+}
+
+.header {
+    color: #fff;
+}
+
+.header-nav {
+    padding-top: 84px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    min-width: 150px;
+    height: 150px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.logo a {
+    font-family: 'Montserrat';
+    font-size: 45px;
+    line-height: 150px;
+}
+
+.menu-adaptive {
+    display: none;
+    cursor: pointer;
+
+    @include lg-block {
+        margin-top: 60px;
+        display: block;
+        position: relative;
+    }
+}
+
+.nav {
+    display: flex;
+    align-self: center;
+
+    @include lg-block {
+        display: none;
+        position: absolute;
+        top: 170px;
+        right: 30px;
+    }
+}
+
+.nav__item {
+    margin-left: 70px;
+    position: relative;
+
+    @include lg-block {
+        margin-top: 8px;
+    }
+
+    &:after {
+        content: '\\\\';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        margin-left: 28px;
+        font-weight: 600;
+        font-size: 18px;
+
+        @include lg-block {
+            display: none;
+        }
+
+    }
+
+    &:last-child:after {
+        display: none;
+    }
+
+}
+
+.nav__link {
+    font-weight: 400;
+    font-size: 18px;
+    transition: .3s;
+
+    &:hover {
+        color: #000;
+    }
+}
+
+.header-title {
+    text-align: center;
+    padding-top: 190px;
+}
+
+.header-title__text {
+    font-size: 70px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -4.2px;
+    line-height: 70px;
+    padding-bottom: 90px;
+
+    @include xs-block {
+        font-size: 45px;
+        line-height: 60px;
+        letter-spacing: -1.2px;
+    }
+}
+
+.header-title__text span {
+    font-size: 45px;
+    letter-spacing: -0.9px;
+
+    @include xs-block {
+        font-size: 35px;
+        line-height: 40px;
+        letter-spacing: -1.2px;
+    }
+}
+
+.button {
+    width: 160px;
+    height: 42px;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid;
+    color: #fff;
+    font-size: 16px;
+    font-family: serif;
+    font-family: 'Open Sans', 'Arial'sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+        background-color: #f39c12;
+        border: 2px solid #f39c12;
+    }
+
+}

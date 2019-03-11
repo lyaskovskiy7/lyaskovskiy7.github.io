@@ -1,0 +1,139 @@
+.pricing {
+    border: 1px solid red;
+    @include row-flex;
+}
+
+.pricing__wrap-left {
+    @include col;
+    @include size(4);
+    @include size-md(12);
+
+    @include md-block {
+        text-align: center;
+    }
+}
+
+.pricing__icon {
+    @include md-block {
+        margin: 0 auto;
+    }
+
+    @include circle;
+    background: url('../src/img/banknote.png') no-repeat center center;
+}
+
+.pricing__title {
+    padding: 30px 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #0d0d0d;
+}
+
+.pricing__text {
+    color: #737373;
+}
+
+
+.prcing__wrap-right {
+    @include col;
+    @include size(7);
+    @include size-md(12);
+    @include shift-left(1);
+    @include shift-md-left(0);
+    display: flex;
+    border: 1px solid #e6e6e6;
+    @include xs-block{
+        flex-wrap: wrap;
+        border: none;
+    }
+}
+
+.pricing-item {
+    border-right: 1px solid #e6e6e6;
+    flex-grow: 1;
+
+    @include xs-block{
+        flex-basis: 560px;
+        border: 1px solid #e6e6e6;
+        margin-top: 30px;
+    }
+
+    &:last-child {
+        border-right: none;
+    }
+
+    &:hover .pricing-item__titile {
+        background: #f39c12;
+        color: #fff;
+    }
+
+    &:hover .pricing-item__titile .border::after {
+        background: #fff;
+    }
+
+    &:hover .pricing-item__list li{
+        background: #f2f2f2;
+    }
+
+    &:hover .pricing-item__list li:nth-child(odd) {
+        background: #e6e6e6;
+        
+    }
+}
+
+.pricing-item__titile {
+    padding: 28px 0;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    color: #0d0d0d;
+    line-height: 35px;
+
+    & .border {
+        position: relative;
+    }
+
+    & .border::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 80%;
+        height: 2px;
+        background: #f39c12;
+        top: 100%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        margin-top: 3px;
+    }
+}
+
+.pricing-item__list {
+    text-align: center;
+
+    & li {
+        padding: 16px 0;
+        color: #737373;
+        font-size: 15px;
+        border-top: 1px solid #e6e6e6;
+    }
+
+    & li:nth-child(odd) {
+        background: #fafafa;
+    }
+}
+
+.pricing-item__footer {
+    text-align: center;
+    background: #fafafa;
+    padding: 30px 0;
+
+    & .button {
+        border: 2px solid #f39c12;
+        color: #0d0d0d;
+    }
+
+    & .button:hover {
+        color: #fff;
+    }
+}

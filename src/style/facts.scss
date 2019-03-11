@@ -1,0 +1,75 @@
+.background-facts {
+    width: 100%;
+    height: 700px;
+    background: url('../src/img/background-2.png') no-repeat center center;
+    background-size: cover;
+
+    @include md-block {
+        height: 1000px;
+    }
+
+    @include xs-block {
+        height: 1600px;
+    }
+}
+
+.facts {
+    padding-top: 196px;
+    @include row-flex;
+    color: #fff;
+}
+
+.facts-item {
+    @include col;
+    @include size(3);
+    @include size-md(6);
+    @include size-xs(12);
+
+    @include md-block {
+        margin-top: 40px;
+    }
+
+    text-align: center;
+}
+
+.facts-item__circle {
+    margin: 0 auto;
+    width: 170px;
+    height: 170px;
+    border: 2px solid #f39c12;
+    border-radius: 50%;
+    font-size: 40px;
+    color: #fff;
+    line-height: 170px;
+
+    &:hover {
+        border-color: #fff;
+    }
+
+    &:hover i {
+        color: #f39c12;
+    }
+}
+
+.facts-item__text {
+    padding-top: 33px;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    @include md-block {
+        padding-top: 5px;
+    }
+
+    @include xs-block {
+        font-size: 23px;
+    }
+}
+
+.big-fz {
+    font-size: 45px;
+
+    @include xs-block {
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,46 @@
+.servise__wrap-item {
+    @include row-flex;  
+    @include md-block{
+        justify-content: center;
+        padding-top: 50px;
+    }
+    padding-top: 100px;
+}
+.servise-item {
+    @include col;
+    @include size(4);
+    @include size-md(6);
+    @include size-xs(12);
+    @include md-block{
+        margin-top: 60px;;
+    }
+    text-align: center;
+}
+
+.servise-item__icon {
+    margin: 0 auto;
+    width: 105px;
+    height: 105px;
+    border: 2px solid #f39c12;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 105px;
+    font-size: 30px;
+
+    &:hover{
+        background: #f39c12;
+        color: #fff;
+    }
+
+}
+
+.servise-item__title {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 30px 0 25px;
+}
+
+.servise-item__text {
+    color: #737373;
+}
