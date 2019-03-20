@@ -1,0 +1,30 @@
+.background-clients{
+    width: 100%;
+    height: 700px;
+    background: url('../src/img/background-2.png') no-repeat center center;
+    background-size: cover;
+}
+.clients__title {
+    text-align: center;
+    padding-top: 200px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.clients__wrap-list {
+    @include row-flex;
+    padding-top: 60px;
+}
+
+.clients__item{
+    @include col;
+    @include size(3);
+    border: 2px solid rgba(255, 255, 255, 0.25);
+
+    &::after{
+        display: block;
+        content: '';
+        padding-top: 63%;
+    }
+}
