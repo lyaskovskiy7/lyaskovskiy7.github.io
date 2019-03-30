@@ -4,14 +4,28 @@
 
 .portfolio-slider__wrap-img {
     max-width: 100%;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid;
 
     &:after {
         content: "";
         display: block;
         padding-top: 49%;
-        background: #f39c12 url('../src/img/Shape_1.png') no-repeat center center;
+        // background: #f39c12 url('../src/img/Shape_1.png') no-repeat center center;
     }
 }
+
+.portfolio-slider__wrapDabl-img{
+    position: absolute;
+    width: 100%;
+    display: flex;
+
+    img{
+        align-self: flex-start;
+    }
+}
+
 
 .portfolio-slider__wrp-buttons {
     padding-top: 50px;

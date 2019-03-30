@@ -1,0 +1,39 @@
+.footer {
+    margin-top: 50px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    @include md-block{
+        flex-wrap: wrap;
+    }
+}
+
+.footer__title {
+    font-size: 14px;
+    color: #0d0d0d;
+    text-transform: uppercase;
+    font-weight: 700;
+    flex-grow: 1;
+    @include md-block{
+        text-align: center;
+    }
+}
+
+.footer__wrap-network {
+    padding-left: 100px;
+    display: flex;
+    flex-grow: 1;
+    margin-right: 50px;
+
+    @include md-block{
+        flex-grow: 0;
+        margin: 0 auto;
+        padding-top: 25px;
+    }
+}
+
+.footer__item{
+    margin-right: 10px;
+    cursor: pointer;
+}

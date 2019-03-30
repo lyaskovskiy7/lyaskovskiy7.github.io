@@ -3,6 +3,15 @@
     height: 700px;
     background: url('../src/img/background-2.png') no-repeat center center;
     background-size: cover;
+
+    @include md-block{
+        height: 900px;
+    }
+
+    @include sm-block{
+        height: 1450px;
+    }
+
 }
 .clients__title {
     text-align: center;
@@ -20,11 +29,19 @@
 .clients__item{
     @include col;
     @include size(3);
+    @include size-md(6);
+    @include size-xs(12);
     border: 2px solid rgba(255, 255, 255, 0.25);
+    display: flex;
+    justify-content: center;
+    height: 200px;
 
-    &::after{
-        display: block;
-        content: '';
-        padding-top: 63%;
+    @include md-block{
+        margin-top: 25px;
     }
+}
+
+.clients__img{
+    display: block;
+    align-self: center;
 }

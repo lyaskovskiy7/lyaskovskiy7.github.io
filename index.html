@@ -8,12 +8,12 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Lato|Open+Sans:300,300i,400,400i,600,600i,700"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="dest/main.css">
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="src/js/main.js"></script>
 </head>
 
@@ -40,6 +40,7 @@
                     </div>
                 </div> -->
         <div class="wrapper">
+            <button class="scrollTop">></button>
             <div class="header">
                 <div class="header-nav">
                     <div class="logo">
@@ -48,22 +49,22 @@
                     <div class="menu-adaptive">MENU</div>
                     <ul class="nav">
                         <li class="nav__item">
-                            <a href="#" class="nav__link">ABOUT</a>
+                            <a href="#about" class="nav__link">ABOUT</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#" class="nav__link">TEAM</a>
+                            <a href="#team" class="nav__link">TEAM</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#" class="nav__link">SERVICES</a>
+                            <a href="#services" class="nav__link">SERVICES</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#" class="nav__link">WORKS</a>
+                            <a href="#works" class="nav__link">WORKS</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#" class="nav__link">BLOG</a>
+                            <a href="#blog" class="nav__link">BLOG</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#" class="nav__link">CONTACT</a>
+                            <a href="#contact" class="nav__link">CONTACT</a>
                         </li>
                     </ul>
                 </div>
@@ -80,7 +81,7 @@
     </div>
     <!-- about -->
     <div class="wrapper">
-        <div class="about">
+        <div class="about" id="about">
             <div class="main-heading">
                 <h6 class="main-heading__title">ABOUT</h6>
                 <p class="main-heading__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
@@ -149,7 +150,7 @@
     </div>
     <!-- team -->
     <div class="wrapper">
-        <div class="team">
+        <div class="team" id="team">
             <div class="main-heading">
                 <h6 class="main-heading__title">Team</h6>
                 <p class="main-heading__text">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
@@ -244,7 +245,7 @@
     </div>
     <!-- service -->
     <div class="wrapper">
-        <div class="service">
+        <div class="service" id="services">
             <div class="main-heading">
                 <h6 class="main-heading__title">Service</h6>
                 <p class="main-heading__text">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
@@ -349,7 +350,13 @@
                     amet nibh vulputate cursus a sit amet mauris.</p>
             </div>
             <div class="portfolio-slider">
-                <div class="portfolio-slider__wrap-img"></div>
+                <div class="portfolio-slider__wrap-img">
+                    <div class="portfolio-slider__wrapDabl-img">
+                        <img src="src/img/portfolio-slider-1.png" alt="img">
+                        <img src="src/img/portfolio-slider-3.jpg" alt="img">
+                        <img src="src/img/portfolio-slider-4.jpg" alt="img">
+                    </div>
+                </div>
                 <div class="portfolio-slider__wrp-buttons">
                     <div class="portfolio-slider__button prev"></div>
                     <div class="portfolio-slider__button next"></div>
@@ -364,7 +371,7 @@
     <!-- works -->
     <hr>
     <div class="wrapper">
-        <div class="works">
+        <div class="works" id="works">
             <div class="works-header">
                 <a href="#" class="works-header__item">All Work</a>
                 <a href="#" class="works-header__item">Graphics</a>
@@ -417,14 +424,15 @@
             <div class="tweet">
                 <div class="tweet__icon"><i class="fab fa-twitter"></i></div>
                 <div class="tweet__text">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum,
-                    nec sagittis sem nibh id elit. Duis sed odio sit amet nibh <a href="#" class="orange">ow.ly/ttlwd</a></div>
+                    nec sagittis sem nibh id elit. Duis sed odio sit amet nibh <a href="#"
+                        class="orange">ow.ly/ttlwd</a></div>
             </div>
         </div>
     </div>
     <!-- post -->
 
     <div class="wrapper">
-        <div class="main-heading">
+        <div class="main-heading" id="blog">
             <h6 class="main-heading__title">Blog</h6>
             <p class="main-heading__text">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
                 bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh
@@ -503,11 +511,72 @@
             <div class="clients">
                 <div class="clients__title">OUR CLIENTS</div>
                 <div class="clients__wrap-list">
-                    <div class="clients__item"></div>
-                    <div class="clients__item"></div>
-                    <div class="clients__item"></div>
-                    <div class="clients__item"></div>
+                    <div class="clients__item"><img class="clients__img" src="src/img/echonote.png" alt="company__img">
+                    </div>
+                    <div class="clients__item"><img class="clients__img" src="src/img/color.png" alt="company__img">
+                    </div>
+                    <div class="clients__item"><img class="clients__img" src="src/img/wmCompany.png" alt="company__img">
+                    </div>
+                    <div class="clients__item"><img class="clients__img" src="src/img/contines.png" alt="company__img">
+                    </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact -->
+    <div class="wrapper">
+        <div class="main-heading" id="contact">
+            <h6 class="main-heading__title">Contact</h6>
+            <p class="main-heading__text">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
+                bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh
+                vulputate cursus a sit amet mauris.</p>
+        </div>
+        <div class="contact">
+            <div class="contact__wrapper-left">
+                <p class="contact__title">Drop Us A Message</p>
+                <input type="text" placeholder="name" class="contact__name contactInp">
+                <input type="text" placeholder="email" class="contact__email contactInp">
+                <textarea name="" id="" cols="30" rows="10" class="contact__message" placeholder="mesage"></textarea>
+                <input type="submit" value="submit" class="contact__but">
+            </div>
+            <div class="contactInfo">
+                <div class="contactInfo__title">Contact Info</div>
+                <div class="contactInfo__about">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi
+                    accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae
+                    erat consequat auctor eu in elit.</div>
+                <div class="contactInfo__wrap">
+                    <div class="contactInfo__item">
+                        <div class="contactInfo__icon"></div>
+                        <div class="contactInfo__text">13/2 Elizabeth St, Melbourne VIC 3000, Australia</div>
+                    </div>
+                    <div class="contactInfo__item">
+                        <div class="contactInfo__icon"></div>
+                        <div class="contactInfo__text">+61 3146 8728, +61 0987 6543</div>
+                    </div>
+                    <div class="contactInfo__item">
+                        <div class="contactInfo__icon"></div>
+                        <div class="contactInfo__text">support@envato.net</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- maps -->
+    <div class="maps">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3342.6661298489225!2d30.52693097986041!3d50.448663032643964!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1553463366912"
+            width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <!-- footer -->
+    <div class="wrapper">
+        <div class="footer">
+            <div class="footer__title">© MINI 2014, All Right Reserves  |  Designed By bigpsfan & Metrothemes</div>
+            <div class="footer__wrap-network">
+                <div class="footer__item"><img src="../src/img/google.svg" alt="google"></div>
+                <div class="footer__item"><img src="../src/img/twitter.svg" alt="twiter"></div>
+                <div class="footer__item"><img src="../src/img/linkedin.svg" alt="linkedin"></div>
+                <div class="footer__item"><img src="../src/img/dribbble.svg" alt="dribbble"></div>
+                <div class="footer__item"><img src="../src/img/facebook.svg" alt="facebook"></div>
             </div>
         </div>
     </div>

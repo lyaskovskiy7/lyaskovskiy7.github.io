@@ -57,6 +57,7 @@
     }
 }
 
+
 .nav__item {
     margin-left: 70px;
     position: relative;
@@ -147,4 +148,29 @@
         border: 2px solid #f39c12;
     }
 
+}
+
+.scrollTop {
+    color: #f39c12;
+    opacity: 0;
+    width: 50px;
+    height: 50px;
+    border: 2px solid;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    font-weight: 400;
+    font-size: 30px;
+    outline: none;
+    transform: rotate(-90deg);
+    background: transparent;
+    position: fixed;
+    right: 0px;
+    bottom: 30px;
+    cursor: pointer;
+    z-index: 9999;
+    transition: .5s;
+}
+
+.block {
+    display: block !important;
 }
